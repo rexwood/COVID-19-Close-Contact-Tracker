@@ -1,0 +1,241 @@
+﻿<Window x:Class="DS_Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DS_Assignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="649.8" Width="1020" Background="#FFA9FFC8">
+    <Grid Name="myGrid">
+
+        <Grid Name ="ImageGrid" HorizontalAlignment="Left" Height="495" Margin="12.42,49.8,0,0" VerticalAlignment="Top" Width="742">
+
+            <Image Source="map.PNG" Stretch="Fill" OpacityMask="Black"/>
+            <Button Name="btn7" HorizontalAlignment="Left" Margin="316.393,178.83,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn7_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img7" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="7" Height="23" Width="36" OpacityMask="White"/>
+                    <Popup Name="pop7" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack7"  ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="7" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn6" HorizontalAlignment="Left" Margin="100.999,357.923,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn6_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img6" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="6" Height="23" Width="36"/>
+                    <Popup Name="pop6" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left"  Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack6" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="6" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn5" HorizontalAlignment="Left" Margin="284.933,439,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn5_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img5" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="5" Height="23" Width="36"/>
+                    <Popup Name="pop5" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left"  Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack5" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="5" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn4" HorizontalAlignment="Left" Margin="595.922,439,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn4_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img4" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="4" Height="23" Width="36"/>
+                    <Popup Name="pop4" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Name="Stack4" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="4" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn3" HorizontalAlignment="Left" Margin="511.217,324.537,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn3_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img3" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="3" Height="23" Width="36"/>
+                    <Popup Name="pop3" StaysOpen="False" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left"  Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack3" />
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="3" Click="addPerson_Click"/>
+
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn2" HorizontalAlignment="Left" Margin="643.115,247.091,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn2_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img2" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="2" Height="23" Width="36"/>
+                    <Popup Name="pop2" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack2" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="2" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn1" HorizontalAlignment="Left" Margin="620.124,94.62,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn1_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img1" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="1" Height="23" Width="36"/>
+                    <Popup Name="pop1" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left"  Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack1" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="1" Click="addPerson_Click"/>
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+            <Button Name="btn0" HorizontalAlignment="Left" Margin="403.519,30.486,0,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" Click="btn0_Click">
+                <StackPanel HorizontalAlignment="Left" Width="Auto" Height="Auto" Orientation="Horizontal">
+                    <Image x:Name="img0" Source="map-2.png" Stretch="Fill"   Cursor="Hand" Tag="0" Height="23" Width="36"/>
+                    <Popup Name="pop0" StaysOpen="False">
+                        <Grid Height="231" Width="200" Background="#FF38AA8B">
+                            <Label Content="该地点人员信息:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="100" FontSize="13"/>
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <StackPanel HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top"  Name="Stack0" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                            </ScrollViewer>
+                            <Button Content="详情" HorizontalAlignment="Left" Margin="115,3.637,0,0" VerticalAlignment="Top" Tag="0" Click="addPerson_Click"/>
+
+                        </Grid>
+                    </Popup>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+        <Label Content="时间轴：" HorizontalAlignment="Left" Margin="12.42,549.8,0,0" VerticalAlignment="Top"/>
+        <Slider Name="TimeSlider" HorizontalAlignment="Left" Margin="12.42,585.144,0,0" VerticalAlignment="Top" Width="742" Maximum="1440" ValueChanged="TimeSlider_ValueChanged"/>
+        <Label Content="导入人员信息(文件)：" HorizontalAlignment="Left" Margin="758.158,43.554,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox Name="openFile" HorizontalAlignment="Left" Height="23" Margin="758.16,80.557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+        <Button Content="打开" Name="btn_OpenFile"  HorizontalAlignment="Left" Margin="924.16,80.557,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="btn_OpenFile_Click"/>
+        <Button Name="btnLoad" Content="导入" HorizontalAlignment="Left" Margin="762.16,186.918,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="btnLoad_Click"/>
+        <Button Name="btnSearch" Content="查询" HorizontalAlignment="Left" Margin="879.16,186.918,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="btnSearch_Click"/>
+        <TextBox Name="saveFile" HorizontalAlignment="Left" Height="23" Margin="758.16,108.557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+        <Button Content="保存" Name="btn_SaveFile" HorizontalAlignment="Left" Margin="924.16,108.557,0,0" VerticalAlignment="Top" Width="55" Height="23" Click="btn_SaveFile_Click"/>
+        <Label Name="TimePlate" Content="00:00" HorizontalAlignment="Left" Margin="70.42,549.8,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSave" Content="保存" HorizontalAlignment="Left" Margin="762.05,141.918,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="btnSave_Click"/>
+        <Button Name="btnResume" Content="继续" HorizontalAlignment="Left" Margin="878.16,141.918,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="btnResume_Click" IsEnabled="False"/>
+        <Label  Name="CurrentState" Content="当前状态：" HorizontalAlignment="Left" Margin="132.591,549.8,0,0" VerticalAlignment="Top" Width="621.829" Height="25" BorderThickness="0" Background="#FF69ECF9">
+        </Label>
+        <TabControl Name="TabControl1" HorizontalAlignment="Left" Height="367.596" Margin="757.235,235.548,0,0" VerticalAlignment="Top" Width="238.731">
+
+            <TabItem Header="添加患者">
+                <Grid HorizontalAlignment="Left" Height="367.596" VerticalAlignment="Top" Width="232.546">
+                    <Label Content="患者基本信息：" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="126" FontSize="18"/>
+                    <Label Content="姓名：" HorizontalAlignment="Left" Height="30" Margin="2,28.487,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="20" Margin="67,33.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+                    <Label Content="工作地址：" HorizontalAlignment="Left" Height="30" Margin="1,53.487,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="deptTextBox" HorizontalAlignment="Left" Height="20" Margin="67,58.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+                    <Label Content="住址：" HorizontalAlignment="Left" Height="30" Margin="4,78.487,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="addrTextBox" HorizontalAlignment="Left" Height="20" Margin="67,83.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+                    <Label Content="联系电话：" HorizontalAlignment="Left" Height="30" Margin="1,103.487,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="teleTextBox" HorizontalAlignment="Left" Height="20" Margin="67,108.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+                    <Label Content="患者轨迹记录：" HorizontalAlignment="Left" Height="30" Margin="4,133.487,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <Label Content="地点：" HorizontalAlignment="Left" Height="30" Margin="1,163.487,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="comboPlace" HorizontalAlignment="Left" Height="25" Margin="37,163.487,0,0" VerticalAlignment="Top" Width="189" IsEnabled="False">
+                        <ComboBoxItem Content="北京师范大学" HorizontalAlignment="Left" Width="246.050420168067" />
+                        <ComboBoxItem Content="人定湖公园" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="西条胡同商业街" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="积水潭医院" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京师范大学分校区" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京大学人民医院" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京动物园" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="枫蓝国际购物中心" HorizontalAlignment="Left" Width="246.050420168067"/>
+                    </ComboBox>
+                    <Label Content="到达时间：" HorizontalAlignment="Left" Height="30" Margin="2,189.771,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="startHour" HorizontalAlignment="Left" Height="20" Margin="66,194.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" IsEnabled="False"/>
+                    <Label Content=":" HorizontalAlignment="Left" Height="30" Margin="97,189.771,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="startMin" HorizontalAlignment="Left" Height="20" Margin="110,194.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" IsEnabled="False"/>
+                    <Label Content="离开时间：" HorizontalAlignment="Left" Height="30" Margin="4,214.771,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="leftHour" HorizontalAlignment="Left" Height="20" Margin="67,219.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" IsEnabled="False"/>
+                    <Label Content=":" HorizontalAlignment="Left" Height="30" Margin="97,214.771,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="leftMin" HorizontalAlignment="Left" Height="20" Margin="110,219.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" IsEnabled="False"/>
+                    <Button Content="添加" x:Name="addInfo" HorizontalAlignment="Left" Margin="151,194.771,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="addInfo_Click" IsEnabled="False"/>
+                    <Button Content="删除" x:Name="delInfo" HorizontalAlignment="Left" Margin="152,219.771,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="delInfo_Click" IsEnabled="False"/>
+                    <ListBox x:Name="spreaderInfo" HorizontalAlignment="Left" Height="90" Margin="10,244.771,0,0" VerticalAlignment="Top" Width="217"/>
+                    <Button Name="btnCreateDone" Content="确认" HorizontalAlignment="Left" Margin="183.087,83.487,0,0" VerticalAlignment="Top" Width="39.459" Height="45" IsEnabled="False" Click="btnCreateDone_Click"/>
+                    <Button Name="btnCreateSpreader" Content="新建" HorizontalAlignment="Left" Margin="183.087,33.487,0,0" VerticalAlignment="Top" Width="39.459" Height="45" Click="btnCreateSpreader_Click"/>
+                    <Label Content="第" HorizontalAlignment="Left" Margin="126.946,138.247,0,0" VerticalAlignment="Top" Width="22.807"/>
+                    <ComboBox Name="comboDay" HorizontalAlignment="Left" Margin="145,138.247,0,0" VerticalAlignment="Top" Width="38.087">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="20"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="20"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="20"/>
+                    </ComboBox>
+                    <Label Content="天" HorizontalAlignment="Left" Margin="183.087,138.247,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="添加人员">
+                <Grid HorizontalAlignment="Left" Height="367.596" VerticalAlignment="Top" Width="232.546">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="210*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="人员基本信息：" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="126" FontSize="18" Grid.ColumnSpan="2"/>
+                    <Label Content="姓名：" HorizontalAlignment="Left" Height="30" Margin="2,28.487,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="nameTextBox2" HorizontalAlignment="Left" Height="20" Margin="44.172,33.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content="工作地址：" HorizontalAlignment="Left" Height="30" Margin="1,53.487,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="deptTextBox2" HorizontalAlignment="Left" Height="20" Margin="44.172,58.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content="住址：" HorizontalAlignment="Left" Height="30" Margin="4,78.487,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="addrTextBox2" HorizontalAlignment="Left" Height="20" Margin="44.172,83.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content="联系电话：" HorizontalAlignment="Left" Height="30" Margin="1,103.487,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="teleTextBox2" HorizontalAlignment="Left" Height="20" Margin="44.172,108.487,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content="人员轨迹记录：" HorizontalAlignment="Left" Height="30" Margin="4,133.487,0,0" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
+                    <Label Content="地点：" HorizontalAlignment="Left" Height="30" Margin="1,163.487,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="comboPlace2" HorizontalAlignment="Left" Height="25" Margin="14.172,163.487,0,0" VerticalAlignment="Top" Width="189" Grid.Column="1" IsEnabled="False">
+                        <ComboBoxItem Content="北京师范大学" HorizontalAlignment="Left" Width="246.050420168067" />
+                        <ComboBoxItem Content="人定湖公园" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="西条胡同商业街" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="积水潭医院" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京师范大学分校区" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京大学人民医院" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="北京动物园" HorizontalAlignment="Left" Width="246.050420168067"/>
+                        <ComboBoxItem Content="枫蓝国际购物中心" HorizontalAlignment="Left" Width="246.050420168067"/>
+                    </ComboBox>
+                    <Label Content="到达时间：" HorizontalAlignment="Left" Height="30" Margin="2,189.771,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="startHour2" HorizontalAlignment="Left" Height="20" Margin="43.172,194.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content=":" HorizontalAlignment="Left" Height="30" Margin="74.282,189.771,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox x:Name="startMin2" HorizontalAlignment="Left" Height="20" Margin="87.172,194.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content="离开时间：" HorizontalAlignment="Left" Height="30" Margin="4,214.771,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="leftHour2" HorizontalAlignment="Left" Height="20" Margin="44.172,219.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Grid.Column="1" IsEnabled="False"/>
+                    <Label Content=":" HorizontalAlignment="Left" Height="30" Margin="74.172,214.771,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox x:Name="leftMin2" HorizontalAlignment="Left" Height="20" Margin="87.172,219.771,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Grid.Column="1" IsEnabled="False"/>
+                    <Button Content="添加" x:Name="addInfo2" HorizontalAlignment="Left" Margin="128.172,194.771,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="addInfo_Click2" Grid.Column="1" IsEnabled="False"/>
+                    <Button Content="删除" x:Name="delInfo2" HorizontalAlignment="Left" Margin="129.172,219.771,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="delInfo_Click2" Grid.Column="1" IsEnabled="False"/>
+                    <ListBox x:Name="personInfo" HorizontalAlignment="Left" Height="90" Margin="10,244.771,0,0" VerticalAlignment="Top" Width="216" Grid.ColumnSpan="2"/>
+                    <Button Name="btnCreatePerson" Content="新建" HorizontalAlignment="Left" Margin="159.718,33.487,0,0" VerticalAlignment="Top" Width="40" Height="45" Grid.Column="1" Click="createPerson_Click"/>
+                    <Button Name="btnCreateDone2" Content="确认" HorizontalAlignment="Left" Margin="159.718,83.487,0,0" VerticalAlignment="Top" Width="40" Height="45" Grid.Column="1" IsEnabled="False" Click="btnCreateDone2_Click"/>
+                    <CheckBox Name="isPro" Content="是否做防护" HorizontalAlignment="Left" Margin="121.393,10,-11.802,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label Content="新冠密接追踪器" HorizontalAlignment="Left" Margin="395.764,2.653,0,0" VerticalAlignment="Top" FontSize="28" FontWeight="Bold" FontFamily="Curlz MT"/>
+        <Label Content="王睿浦18041005" HorizontalAlignment="Left" Margin="901.252,13.314,0,0" VerticalAlignment="Top"/>
+        <Grid Name="canvas">
+
+        </Grid>
+    </Grid>
+</Window>
